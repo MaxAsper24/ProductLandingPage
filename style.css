@@ -69,10 +69,10 @@ a:focus {
 main {
   padding-top: 9rem;
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) minmax(mincontent, 75rem) minmax(
+  /* grid-template-columns: minmax(2rem, 1fr) minmax(mincontent, 75rem) minmax(
       2rem,
       1fr
-    );
+    ); */
 }
 
 input[type="email"] {
@@ -120,4 +120,11 @@ input[type="submit"]:visited {
 
 .underline {
   text-decoration: underline;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
 }
