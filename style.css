@@ -7,7 +7,9 @@
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
 }
 
 html {
@@ -17,6 +19,7 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  width: auto;
   background-image: url(images/razer-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,7 +75,7 @@ a:focus {
 
 main {
   padding-top: 9rem;
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
 }
 
 input[type="email"] {
@@ -201,7 +204,27 @@ iframe {
   grid-row: 1 / 2;
 }
 
-/* .basilisk-t {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-} */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #111;
+  width: 100%;
+  height: 6rem;
+  margin-top: 6rem;
+  padding: 3rem 0;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.grey,
+.grey > li {
+  font-size: 0.85rem;
+  color: #666;
+  list-style: none;
+  margin: 0.5rem 1rem;
+  padding: 0;
+}
