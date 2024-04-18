@@ -16,7 +16,6 @@ html {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #333;
   text-align: center;
   background-image: url(images/razer-background.jpg);
   background-size: cover;
@@ -73,11 +72,7 @@ a:focus {
 
 main {
   padding-top: 9rem;
-  /* display: grid; */
-  /* grid-template-columns: minmax(2rem, 1fr) minmax(mincontent, 75rem) minmax(
-      2rem,
-      1fr
-    ); */
+  padding-bottom: 10rem;
 }
 
 input[type="email"] {
@@ -122,13 +117,25 @@ input[type="submit"]:visited {
 }
 
 h1 {
+  font-size: 2rem;
   color: #0d0;
   margin: 2rem auto;
 }
 
-.text,
+h2 {
+  font-size: 1.25rem;
+}
+
+p,
+li,
 h2 {
   color: #eee;
+  line-height: 1.5rem;
+}
+
+li {
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .underline {
@@ -161,28 +168,40 @@ iframe {
   padding-top: 2rem;
 }
 
-.mice-wrapper {
+.mice-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2 1fr);
 }
+/* Add width properties to media queries to make images responsive */
 
-.basilisk-p {
+.grid-pic {
+  border: 1px solid #333;
+  background-color: black;
+  margin: 5px;
+}
+
+.basilisk-c {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
-.viper-p {
+.viper-c {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
 }
 
-.deathadder-p {
+.deathadder-c {
   grid-column: 4 / 5;
   grid-row: 1 / 2;
 }
 
-.naga-p {
+.naga-c {
   grid-column: 5 / 6;
   grid-row: 1 / 2;
 }
+
+/* .basilisk-t {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+} */
