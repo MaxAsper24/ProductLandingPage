@@ -2,7 +2,6 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 html,
@@ -176,7 +175,6 @@ iframe {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2 1fr);
 }
-/* Add width properties to media queries to make images responsive */
 
 .grid-pic {
   border: 1px solid #333;
@@ -227,4 +225,96 @@ footer > ul {
   list-style: none;
   margin: 0.5rem 1rem;
   padding: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .razer-logo {
+    width: 200px;
+  }
+
+  nav > ul > li {
+    font-size: 1.1rem;
+  }
+
+  .mice-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .basilisk-c {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .viper-c {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .deathadder-c {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .naga-c {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .page-header {
+    display: block;
+  }
+
+  .razer-logo {
+    width: 150px;
+    top: 0;
+  }
+
+  .navbar {
+    position: relative;
+    margin: auto;
+    border-top: 1px solid #333;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .mice-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .basilisk-c {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .viper-c {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .deathadder-c {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .naga-c {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .grey,
+  .grey > li {
+    font-size: 0.8rem;
+  }
 }
