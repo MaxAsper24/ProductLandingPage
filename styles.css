@@ -227,6 +227,10 @@ footer > ul {
   padding: 0;
 }
 
+.grey {
+  color: whitesmoke;
+}
+
 @media screen and (max-width: 1400px) {
   .razer-logo {
     width: 200px;
